@@ -14,4 +14,4 @@ export const map = (f, iter) => {
     return res;
 }
 
-console.log(map((item) => item.name, products))
+// console.log(map((item) => item.name, products))

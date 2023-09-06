@@ -16,4 +16,4 @@ export const filter = (f, iter) => {
     return res;
 }
 
-console.log(filter((item) => item.name === '후드티', products))
+// console.log(filter((item) => item.name === '후드티', products))
