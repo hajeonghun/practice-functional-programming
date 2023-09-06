@@ -1,0 +1,9 @@
+{
+  "name": "practice-functional-programming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hajeonghun/practice-functional-programming.git",
+  "author": "하정훈 <hajh1994@gmail.com>",
+  "license": "MIT",
+  "type": "module"
+}
