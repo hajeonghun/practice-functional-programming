@@ -1,6 +1,8 @@
 // import {filter} from "../01/filter.js";
 // import {map} from "../01/map.js";
 import {reduce} from "../01/reduce.js";
+import {filter} from "../01/filter.js";
+import {map} from "../01/map.js";
 
 const products = [
     {name: '반팔티', price: 15000},
@@ -28,18 +30,26 @@ const myGo = (a, ...fs) => {
 export const go = (...args) => reduce((a, f) => f(a), args)
 
 // 111
-myGo(
-    0,
-    a => a + 1,
-    a => a + 10,
-    a => a + 100,
-    console.log,
-);
+// myGo(
+//     0,
+//     a => a + 1,
+//     a => a + 10,
+//     a => a + 100,
+//     console.log,
+// );
+//
+// go(
+//     0,
+//     a => a + 1,
+//     a => a + 10,
+//     a => a + 100,
+//     console.log,
+// )
 
 go(
-    0,
-    a => a + 1,
-    a => a + 10,
-    a => a + 100,
-    console.log,
-)
+    products,
+    products => filter(p => p.price < 20000, products),
+    products => map(p => p.price, products),
+    prices => reduce(add, prices),
+    // console.log
+);

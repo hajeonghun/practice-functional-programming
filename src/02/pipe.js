@@ -5,7 +5,7 @@ import {go} from "./go.js";
 const myPipe = (...args) => (initial) => reduce((a, f) => f(a), initial, args);
 
 // 강의 정석
-const pipe = (...args) => (initial) => go(initial, ...args);
+export const pipe = (...args) => (initial) => go(initial, ...args);
 
 const f = pipe(
     a => a + 1,
@@ -13,4 +13,4 @@ const f = pipe(
     a => a + 100,
 )
 
-console.log(f(0)) // 111 예상
+// console.log(f(0)) // 111 예상
