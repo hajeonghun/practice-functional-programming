@@ -1,4 +1,4 @@
-import {map} from "./map.js";
+// import {map} from "./map.js";
 
 const products = [
     {name: '반팔티', price: 15000},
